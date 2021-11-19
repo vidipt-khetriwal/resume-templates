@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <title>My Resume 2</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        .main-page {
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1105px;
+        min-width: 1105px;
+        max-width: 1105px;
+        /* height: 1464px; */
+        min-height: 1464px;
+        max-height: 1464px;
+        /* border: 2px solid silver; */
+        /* border: 1px solid red; */
+    }
+    .top {
+        height: 30%;
+        /* border: 2px solid blue; */
+        display: flex;
+        flex-direction: row;
+    }
+    .bottom {
+        display: flex;
+        flex-direction: row;
+    }
+    .top-left {
+        padding: 20px;
+        width: 35.8%;
+        /* border: 2px solid red; */
+        display: flex;
+        align-items: center;
+        background-color: #5f83ad;
+    }
+    .mail, .ph-num, .linked-in, .location {
+        display: flex;
+        flex-direction: row;
+    }
+    .top-right {
+        padding: 20px;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        background-color: #EBEBF5;
+    }
+    .summary-head {
+        padding: 10px;
+        font-size: 22px;
+        font-weight: 700;
+        /* border-bottom: 2px solid grey; */
+    }
+    .summary-body {
+        padding: 10px;
+        text-align: justify;
+        font-size: 17px;
+    }
+    .applicant-name {
+        font-size: 70px;
+        padding: 20px 0px;
+    }
+    i {
+        font-size: 20px;
+        margin-right: 15px;
+    }
+    .mail, .linked-in, .location, .ph-num {
+        margin: 20px 0px;
+        font-size: 19px;
+    }
+    .bottom-left {
+        width: 40%;
+        padding: 4px;
+        height: 1049px;
+        /* border: 2px solid red; */
+        background-color: #8c9bbe;
+    }
+    .skills-head {
+        /* text-align: center; */
+        padding: 15px;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-bottom: 0px;
+        padding-top: 20px;
+        margin-bottom: 15px;
+    }
+    .skills-body {
+        padding: 0px 15px;
+        
+    }
+    .skill {
+        margin: 5px 0px;
+        font-size: 17px;
+    }
+    .ach-content, .add-content, .lang-content {
+        padding: 15px;
+        text-align: justify;
+        margin-top: 25px;
+    }
+    .lang-content {
+        margin-top: 5px;
+    }
+    .ach-head, .add-head, .lang-head{
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        font-weight: 700;
+    }
+    .add-content {
+        margin-top: 10px;
+    }
+    .ach-body, .add-body, .lang-body {
+        font-size: 17px;
+    }
+    .lang {
+        font-size: 17px;
+        margin: 5px 0px;
+    }
+    .bottom-right {
+        padding: 30px;
+        padding-top: 20px;
+        width: 60%;
+    }
+    .education {
+    /* margin-top: 10px; */
+    overflow-wrap: break-word;
+    }
+    .education-head {
+        /* padding-bottom: 10px; */
+        margin:0px 0px 15px 0px;
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+        /* border-bottom: 2px solid darkgray */
+    }
+    .education-body {
+        font-size: 17px;
+        padding-bottom: 10px;
+    }
+    .college-name {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .college-detail {
+        padding: 0px 30px;
+        /* border: 2px solid red; */
+        font-weight: 500;
+    }
+    ul {
+        list-style: inside;
+    }
+    .std12 {
+        margin-top: 10px;
+        /* text-transform: uppercase; */
+    }
+    .std12-name {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .std12-detail {
+        padding: 0px 30px;
+        font-weight: 500;
+    }
+
+    .works {
+    margin-top: 20px;
+    text-align: justify;
+    }
+    .work-head {
+        /* padding-bottom: 10px; */
+        margin:0px 0px 10px 0px;
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+        /* border-bottom: 2px solid darkgray */
+    }
+    .work-body {
+        padding-bottom: 10px;
+    }
+    .work-name {
+        padding: 5px 0px;
+        font-weight: 700;
+        font-size: 17px;
+
+        text-transform: uppercase;
+    }
+    .work-detail {
+        padding-left: 30px;
+    }
+    </style>
+    <div class="main-page">
+        <!-- <button type="button" onclick="test()">Click!!</button> -->
+        <div class="top">
+            <div class="top-left">
+                <div class="name-area">
+                    <div class="applicant-name" id="name">Yash Ray</div>
+                    <div class="applicant-contact">
+                        <div class="mail">
+                            <div class="mail-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="mail-value" style="overflow-wrap: break-word;">ray.yash.08 @gmail.com</div>
+                        </div>
+                        <div class="ph-num">
+                            <div class="ph-num-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="ph-num-value">1234567890</div>
+                        </div>
+                        <div class="linked-in">
+                            <div class="linkedin-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div class="linkedin-value">https://www.linkedin.com /in/yash-ray-cri80vt/</div>
+                        </div>
+                        <div class="location">
+                            <div class="location-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="location-value">Jamshedpur, Jharkhand, IN</div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="top-right">
+                <div class="summary">
+                    <div class="summary-head">Professional Summary</div>
+                    <div class="summary-body">Deserunt anim commodo incididunt mollit labore et adipisicing laboris sunt.Cillum eiusmod elit sint laborum eu et magna eiusmod occaecat eiusmod ex.Nulla commodo cillum ut velit mollit excepteur deserunt.Laborum est aliqua elit proident incididunt cillum est incididunt elit enim est laborum.Id Lorem aliquip enim non amet.</div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottom-left">
+                <div class="skills">
+                    <div class="skills-head">
+                        <span>Skills</span>
+                    </div>
+                    <div class="skills-body">
+                        <div class="skill">HTML5</div>
+                        <div class="skill">CSS3</div>
+                        <div class="skill">Javascript</div>
+                        <div class="skill">C++</div>
+                        <div class="skill">JAVA</div>
+                        <div class="skill">Excellent Work Ethic</div>
+                        <div class="skill">Team Player</div>
+                    </div>
+                </div>
+                <div class="achievements">
+                    <div class="ach-content">
+                        <div class="ach-head">Achievements</div>
+                        <div class="ach-body">Pariatur incididunt fugiat deserunt Lorem dolore.Ullamco aute sit consectetur dolor in qui Lorem dolor excepteur non aliquip.Esse quis cillum esse culpa ipsum ex aliqua in amet minim amet consectetur qui.Pariatur incididunt fugiat deserunt Lorem dolore.Ullamco aute sit consectetur dolor in qui Lorem dolor excepteur non aliquip.Pariatur incididunt fugiat deserunt Lorem dolore.Ullamco aute sit consectetur dolor in qui Lorem dolor excepteur non aliquip.</div>
+                    </div>
+                </div>
+                <div class="additional-info">
+                    <div class="add-content">
+                        <div class="add-head">Additional Information</div>
+                        <div class="add-body">Cupidatat culpa nulla consectetur commodo incididunt laborum enim in mollit cillum.Dolore officia labore minim aliqua incididunt adipisicing.Tempor laboris sunt exercitation fugiat et sit elit ullamco esse aliquip laborum.Mollit nostrud qui non ut.Est incididunt veniam sit quis quis sunt non non deserunt elit qui eu sint reprehenderit.</div>
+                    </div>
+                </div>
+                <div class="languages">
+                    <div class="lang-content">
+                        <div class="lang-head">Languages Known</div>
+                        <div class="lang-body">
+                            <div class="lang">English</div>
+                            <div class="lang">Hindi</div>
+                            <div class="lang empty"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-right">
+                <div class="education">
+                    <div class="education-head">
+                        Education
+                    </div>
+                    <div class="education-body">
+                        <div class="college">
+                            <div class="college-name">
+                                Vellore Institue of Technology
+                            </div>
+                            <div class="college-detail">
+                                <ul>
+                                    <li>Expected Year of Graduation: 2023</li>
+                                    <li>Subjects Studied: DSA, DBMS, DLD, ADDE, Operating Systems</li>
+                                    <li>Current CGPA: 8.74</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="std12">
+                            <div class="std12-name">
+                                Loyola School
+                            </div>
+                            <div class="std12-detail">
+                                <ul>
+                                    <li>Year of Passing: 2019</li>
+                                    <li>Stream: Science with Computer</li>
+                                    <li>Percentage: 93.5%</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="std12">
+                            <div class="std12-name">
+                                Loyola School
+                            </div>
+                            <div class="std12-detail">
+                                <ul>
+                                    <li>Year of Passing: 2017</li>
+                                    <li>Stream: Science</li>
+                                    <li>Percentage: 94.4%</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="works">
+                    <div class="work-head">
+                        Work Experience / Projects
+                    </div>
+                    <div class="work-body">
+                        <div class="work">
+                            <div class="work-name">
+                                Stockify
+                            </div>
+                            <div class="work-detail">
+                                <ul>
+                                    <li>Ut est commodo ullamco nisi duis.Id Lorem Lorem esse occaecat do amet mollit consectetur officia dolor tempor aliqua ea id.Dolor cupidatat qui cillum laborum voluptate.</li>
+                                    <li>Adipisicing sunt fugiat ullamco incididunt nostrud.In pariatur officia est deserunt incididunt consectetur.</li>
+                                    <li>Ullamco esse adipisicing aliquip aliquip ipsum cillum eiusmod esse.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <div class="work-name">
+                                Stockify
+                            </div>
+                            <div class="work-detail">
+                                <ul>
+                                    <li>Ut est commodo ullamco nisi duis.Id Lorem Lorem esse occaecat do amet mollit consectetur officia dolor tempor aliqua ea id.Dolor cupidatat qui cillum laborum voluptate.</li>
+                                    <li>Adipisicing sunt fugiat ullamco incididunt nostrud.In pariatur officia est deserunt incididunt consectetur.</li>
+                                    <li>Ullamco esse adipisicing aliquip aliquip ipsum cillum eiusmod esse.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <div class="work-name">
+                                Stockify
+                            </div>
+                            <div class="work-detail">
+                                <ul>
+                                    <li>Ut est commodo ullamco nisi duis.Id Lorem Lorem esse occaecat do amet mollit consectetur officia dolor tempor aliqua ea id.Dolor cupidatat qui cillum laborum voluptate.</li>
+                                    <li>Adipisicing sunt fugiat ullamco incididunt nostrud.In pariatur officia est deserunt incididunt consectetur.</li>
+                                    <li>Ullamco esse adipisicing aliquip aliquip ipsum cillum eiusmod esse.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function() {
+            var inp = document.getElementById("name").textContent;
+            var wd_len = inp.length;
+            var f_size = Math.floor(400 / wd_len);
+            console.log(f_size);
+            document.getElementById("name").style.fontSize = "";
+        }
+    </script>
+</body>
+</html>
